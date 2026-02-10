@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+	<style>
+	.sleepycatcollbrationwithLD * {
+		font-family: "Inter", sans-serif;
+	}
+	.sleepycatcollbrationwithLD h2, .sleepycatcollbrationwithLD h3, .sleepycatcollbrationwithLD h4, .sleepycatcollbrationwithLD h5 {
+		 font-family: "Cormorant Garamond", serif;
+	}
+	.headersleepycat {
+	    padding: 70px 0;
+	    margin: 0 auto;
+	}
+
+	.sleepycatinner {
+	    text-align: center;
+	}
+
+	.sleepycatinner .logosleepy {
+	    margin: 0 auto;
+	    max-width: 500px;
+	}
+
+	.sleepycatinner .logosleepy img {
+	    width: 100%;
+	}
+
+	.sleepycatinner .logosleepy p {
+	    font-size: 14px;
+	    color: #6E6E6E;
+	    margin: 20px 0;
+	}
+
+	.sleepycontainer {
+	    max-width: 1290px;
+	    margin: 0 auto;
+	    padding: 0 15px;
+	}
+
+	.col-4 {
+	    width: 40%;
+	}
+
+	.col-35 {
+	    width: 35%;
+	}
+
+	.row {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+
+	.dogbrokersec .row {
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	}
+
+	.dogbrokerimage img {
+	    width: 100%;
+	}
+	.dogbrokercontent h2 span {
+	    font-family: "Cormorant Garamond", serif;
+	    opacity: 0.5;
+	    display: block;
+	}.dogbrokercontent h2 {
+	    max-width: 380px;
+	    font-size: 68px;
+	    line-height: 1.1;
+	    margin: 0;
+	}
+
+	.dogbrokercontent p {
+	    font-size: 18px;
+	    font-family: 'Inter';
+	    line-height: 1.5;
+	    color: #6E6E6E;
+	}
+
+	.dogbrokercontent p span {
+	    font-family: 'Cormorant Garamond';
+	    font-size: 20px;
+	    font-style: italic;
+	    font-weight: 800;
+	    color: #2B2B2B;
+	}
+
+	.dogbrokerimage h6 {
+	    font-size: 14px;
+	    color: #6E6E6E;
+	    font-style: italic;
+	    margin: 10px 0;
+	    font-weight: 400;
+	    text-align: right;
+	}
+	.col-45 {
+		width: 45%;
+	}
+	.col-5 {
+		width: 50%;
+	}
+	.dogbrokersec {
+	    padding-bottom: 50px;
+	}
+	.whatyourecieved {
+	    padding: 116px 0;
+	    background: #FAFAF8;
+	}
+	.foodimage img {
+	    width: 100%;
+	}
+	.foodimage {
+	    padding: 20px;
+	    background: #fff;
+	    box-shadow: 5px 7px 20px rgba(0,0,0,0.1);
+	}
+	.whatyourecieved .row {
+	    justify-content: space-between;
+	    max-width: 670px;
+	    margin: 0 auto;
+	}
+	.dogfoodcontent h6 {
+	    font-size: 14px;
+	    color: #6E6E6E;
+	    margin-bottom: 10px;
+	    font-weight: 500;
+	}
+
+	.dogfoodcontent h4 {
+	    font-size: 16px;
+	    font-family: 'Inter';
+	    font-weight: 500;
+	    color: #2B2B2B;
+	    line-height: 1.4;
+	}
+
+	.dogfoodcontent h4 span {
+	    font-size: 21px;
+	    font-family: 'Cormorant Garamond';
+	}
+
+	.dogfoodcontent p {
+	    color: #6E6E6E;
+	    font-size: 16px;
+	    line-height: 1.4;
+	}
+
+	.dogfoodcontent ul {
+	    display: flex;
+	    flex-wrap: wrap;
+	    padding: 10px 0 0;
+	    list-style: none;
+	    gap: 10px;
+	    row-gap: 24px;
+	}
+	.shoptreatbundleslidersec {
+	    padding: 50px 0;
+	    background: #fafaf8;
+	}
+
+	body {
+	    margin: 0;
+	}
+
+	.treatbundlesec {
+	    padding: 84px 0;
+	}
+
+	.treatbundlecontent {
+	    text-align: center;
+	}
+
+	.treatbundlecontent h2 {
+	    color: #2B2B2B;
+	    font-size: 40px;
+	    font-weight: 600;
+	    margin: 0;
+	}
+
+	.treatbundlecontent p {
+	    margin: 36px 0;
+	    font-size: 18px;
+	    color: #6E6E6E;
+	    font-weight: 400;
+	    line-height: 1.6;
+	}
+	.themebtn {
+	    background: #4F6F52;
+	    padding: 19px 24px;
+	    color: #fff;
+	    font-size: 13px;
+	    text-transform: uppercase;
+	    font-family: 'Inter';
+	    font-weight: 300;
+	    text-decoration: none;
+	    display: inline-block;
+	}
+	.themebtn:hover {
+	    background: #000;
+	}
+	.dogfoodcontent ul li span {
+	    padding: 10px 16px;
+	    font-size: 11px;
+	    color: #6E6E6E;
+	    border-radius: 50px;
+	    background: #F0F0E9;
+	    font-weight: 500;
+	}
+	.dogfoodcontent p span {
+	    text-transform: uppercase;
+	}
+	.singletreatbundleslidersec {
+		padding: 90px 0;
+	}
+	.notifynewslettersec {
+	    padding: 84px 0;
+	    background: #FAFAF8;
+	}
+
+	.notifynewslettercontent {
+	    text-align: center;
+	}
+
+	.notifynewslettercontent h6 {
+	    font-size: 14px;
+	    color: #6E6E6E;
+	    font-family: 'Inter';
+	    font-weight: 500;
+	    opacity: 7.5;
+	    margin: 0;
+	}
+
+	.notifynewslettercontent h2 {
+	    font-size: 40px;
+	    color: #2B2B2B;
+	    max-width: 480px;
+	    margin: 30px auto 20px;
+	}
+
+	.notifynewslettercontent h5 {
+	    font-size: 18px;
+	    margin: 0;
+	    color: #6E6E6E;
+	    font-family: 'Inter';
+	    font-weight: 500;
+	}
+
+	.notifynewslettercontent p {
+	    margin: 17px 0 30px;
+	    font-size: 14px;
+	    color: #AAAAAA;
+	}
+
+	.notifynewslettercontent .notifybox .notifyboxwrapper {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	.notifynewslettercontent .notifybox .notifyboxwrapper input {
+	    font-size: 10px;
+	    color: #000;
+	    border: 1px solid #E5E5E5;
+	    padding: 16px 15px;
+	}
+
+	.notifynewslettercontent .notifybox .notifyboxwrapper button {
+	    border: 1px solid #E5E5E5;
+	    background: transparent;
+	    color: #2B2B2B;
+	    font-size: 10px;
+	    padding: 16px 30px;
+	    margin-left: 10px;
+	}
+	.diuscountlettersec {
+	    padding: 84px 0;
+	}
+
+	.diuscountlettercontent {
+	    text-align: center;
+	    max-width: 650px;
+	    margin: 0 auto;
+	    border: 1px solid #4F6F52;
+	    padding: 10px;
+	    border-collapse: unset;
+	}
+	.diuscountlettercontentinner {	
+	    border: 1px solid #4F6F52;
+	    padding: 30px 30px;
+	}
+	.diuscountlettercontent p {
+	    color: #6E6E6E;
+	    font-size: 14px;
+	    text-transform: uppercase;
+	    margin: 0;
+	}
+
+	.diuscountlettercontent h2 {
+	    font-size: 40px;
+	    color: #2B2B2B;
+	    margin: 15px 0;
+	}
+
+	.diuscountlettercontent h2 span {
+	    font-family: 'Cormorant Garamond';
+	    color: #4F6F52;
+	}
+
+	.diuscountlettercontent h6 {
+	    font-size: 14px;
+	    color: #6E6E6E;
+	    opacity: 7.5;
+	    font-family: 'Cormorant Garamond';
+	    margin: 0;
+	}
+	.madeinsmallbraches ul {max-width: 950px;display: flex;align-items: center;justify-content: space-between;border-bottom: 1px solid #f1f1f1;border-top: 1px solid #f1f1f1;padding: 90px 0;list-style: none;margin: 0 auto;}
+
+	.madeinsmallbraches ul li {font-size: 18px;color: #6E6E6E;font-weight: 400;}
+
+	.copybottom {
+	    padding: 54px 0;
+	    text-align: center;
+	}
+
+	.copybottom p {
+	    font-size: 14px;
+	    color: #AAAAAA;
+	}
+	.shoptreatbundleslide, .singletreatbundleslide {
+	    padding: 0 30px;
+	}
+
+	.shoptreatbundleslideinner , .singletreatbundleslideinner {
+	    background: #fff;
+	    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	}
+
+	.shoptreatbundleslideimage, .singletreatbundleslideimage {
+	    width: 100%;
+	    background: #fff;
+	    border: 1px solid #333;
+	    height: 300px;
+	}
+
+	.shoptreatbundleslideimage img, .singletreatbundleslideimage img {
+	    width: 100%;
+	    height:100%;
+	    object-fit: cover;
+	    
+	}
+
+	.shoptreatbundleslidecontent, .singletreatbundleslidecontent {
+	    padding: 22px 50px;
+	}
+
+	.shoptreatbundleslidecontent .bidgepill span, .singletreatbundleslidecontent .bidgepill span {
+	    background: #EDFDEE;
+	    font-size: 8px;
+	    color: #4F6F52;
+	    padding: 8px 14px;
+	}
+
+	.shoptreatbundleslidecontent h3, .singletreatbundleslidecontent h3 {
+	    font-size: 30px;
+	    color: #2B2B2B;
+	    margin: 30px 0 20px;
+	    font-weight: 600;
+	}
+
+	.shoptreatbundleslidecontent p, .singletreatbundleslidecontent p {
+	    font-size: 14px;
+	    color: #6E6E6E;
+	    margin: 0;
+	}
+
+	.shoptreatbundleslidecontent .bundleprice p, .singletreatbundleslidecontent .bundleprice p {
+	    color: #2B2B2B;
+	    margin: 0;
+	    font-size: 30px;
+	    font-family: 'Cormorant Garamond' !important;
+	}
+
+	.shoptreatbundleslidecontent .bundleprice, .singletreatbundleslidecontent .bundleprice {
+	    margin: 22px 0;
+	}
+
+	.shoptreatbundleslidecontent .themebtn {
+	    width: 100%;
+	    text-align: center;
+	    padding: 19px 0;
+	    margin-top: 10px;
+	}
+
+	.howtouseblock h6 {
+	    font-size: 10px;
+	    color: #6E6E6E;
+	    opacity: 0.75;
+	    display: flex;
+	    justify-content: space-between;
+	    margin: 0;
+	    font-weight: 500;
+	}
+
+	.howtouseblock h6 span.icon svg {
+	    width: 15px;
+	    height: 15px;
+	}
+
+	.howtouseblock {
+	    margin-top: 62px;
+	}
+
+	.howtouseblocktext h6 {
+	    font-size: 8px;
+	    color: #6E6E6E;
+	    opacity: 0.75;
+	    margin: 8px 0;
+	}
+
+	.howtouseblocktext p {
+	    color: #6E6E6E;
+	    opacity: 0.75;
+	    font-size: 8px;
+	    line-height: 1.7;
+	    margin-bottom: 20px;
+	}
+
+	.howtouseblocktext {
+	    display: none;
+	}
+
+	.shoptreatbundleslider  .slick-track, .singletreatbundleslider  .slick-track {
+	    padding: 50px 0;
+	}
+
+	.shoptreatbundleslider button.customagentslick, .singletreatbundleslider button.customagentslick  {
+	    position: absolute;
+	    top: 50%;
+	    background: transparent;
+	    border: none;
+	    padding: 0;
+	    opacity: 0.4;
+	}
+
+	.shoptreatbundleslider button.customagentslick.slick-next, .singletreatbundleslider button.customagentslick.slick-next {
+	    right: -20px;
+	}
+
+	.shoptreatbundleslider button.customagentslick.slick-prev, .singletreatbundleslider button.customagentslick.slick-prev {
+	    left: -20px;
+	}
+	.singletreatbundleslidecontent a.themebtn.outlinebtn {
+	    color: #2B2B2B;
+	    border: 1px solid #BABABA;
+	    width: 100%;
+	    background: transparent;
+	    text-align: center;
+	    font-weight: 600;
+	    display: inline-block;
+	    padding: 19px 0;
+	    font-size: 12px;
+	}
+
+	.singletreatbundleslidersec .contentwithbox p {
+	    text-align: center;
+	    color: #6E6E6E;
+	    font-size: 18px;
+	    font-weight: 400;
+	    opacity: 0.9;
+	    line-height: 1.6;
+	    margin: 0;
+	}
+	.foodimage {
+	    overflow: hidden;
+	}
+
+	.foodimage img {
+	    transition: 0.5s all;
+	}
+
+	.foodimage img:hover {
+	    transform: scale(1.1);
+	}
+
+	.dogfoodcontent ul li span:hover {
+	    background: #d8d8d5;
+	}
+
+	.singletreatbundleslidecontent a.themebtn.outlinebtn:hover, .notifynewslettercontent .notifybox .notifyboxwrapper button:hover {
+	    background: #4f6f52;
+	    color: #fff;
+	}
+
+	.diuscountlettercontentinner:hover {
+	    background: #4f6f52;
+	}
+
+	.diuscountlettercontentinner:hover * {
+	    color: #fff;
+	}
+	@media(max-width: 1025px) {
+		.sleepycontainer {
+			 width: 90%;
+		}
+		.shoptreatbundleslide, .singletreatbundleslide {
+		    padding: 0 10px;
+		}
+	}
+	@media(max-width: 800px) {
+		.col-4 {
+		    width: 100%;
+		}
+
+		.dogbrokercontent {
+		    margin-bottom: 60px;
+		}
+
+		.madeinsmallbraches ul {
+		    width: 90%;
+		}
+
+		.madeinsmallbraches ul li {
+		    font-size: 16px;
+		}
+	}
+	@media(max-width: 500px) {
+		.headersleepycat {
+		    padding: 40px 0;
+		    margin: 0 auto;
+		}
+		.dogbrokercontent h2 {
+		    max-width: unset;
+		    font-size: 48px;
+		    line-height: 1.1;
+		    margin: 0 auto;
+		    text-align: center;
+		}
+		.dogbrokercontent p {
+			font-size: 16px;
+			text-align: center;
+		}
+		.whatyourecieved, .treatbundlesec {
+			padding: 60px 0;
+		}
+		.col-45 {
+		    width: 100%;
+		}
+		.whatyourecieved .row {
+			flex-direction: column-reverse;
+		}
+		.dogfoodcontent {
+			text-align: center;
+			margin-bottom: 60px;
+		}
+		.dogfoodcontent ul {
+			justify-content: center;
+		}
+		.treatbundlecontent h2 {
+			font-size: 30px;
+		}
+		.treatbundlecontent p {
+			margin: 20px 0;
+			font-size: 16px;
+		}
+		.shoptreatbundleslidersec {
+		    padding: 20px 20px;
+		    background: #fafaf8;
+		}
+		.shoptreatbundleslideimage, .singletreatbundleslideimage {
+		    height: 220px;
+		}
+		.shoptreatbundleslidecontent, .singletreatbundleslidecontent {
+			padding: 20px 30px;
+		}
+		.shoptreatbundleslidecontent h3, .singletreatbundleslidecontent h3 {
+		    font-size: 22px;
+	        margin: 20px 0 10px;
+		}
+		.shoptreatbundleslidecontent p, .singletreatbundleslidecontent p, .copybottom p {
+		    font-size: 12px;
+		}
+		.howtouseblock {
+		    margin-top: 32px;
+		}
+		.singletreatbundleslidersec {
+		    padding: 50px 20px 20px;
+		}
+		.singletreatbundleslidersec .contentwithbox p, .notifynewslettercontent h5 {
+			font-size: 16px;
+		}
+		.notifynewslettersec {
+		    padding: 50px 0;
+		    background: #FAFAF8;
+		}
+		.notifynewslettercontent h2 {
+		    font-size: 30px;
+			margin: 20px auto 20px;
+			line-height: 1.1;
+		}
+		.diuscountlettercontent p {
+			font-size: 12px;
+		}
+		.diuscountlettercontent h2 {
+			font-size: 24px;
+			line-height: 1.2;
+		}
+		.diuscountlettercontentinner {
+		    border: 1px solid #4F6F52;
+		    padding: 20px 10px;
+		}
+		.diuscountlettersec {
+		    padding: 54px 0;
+		}
+	    .madeinsmallbraches ul {
+	        width: 90%;
+	        display: block;
+	        text-align: center;
+	        padding: 50px 0;
+	    }
+	    .madeinsmallbraches ul li {
+	        font-size: 16px;
+	        padding: 5px 0;
+	    }
+	    .copybottom {
+		    padding: 24px 0;
+		    text-align: center;
+		}
+		.dogfoodcontent h6 {
+			margin-top: 0px;
+		}
+	}
+	</style>
+</head>
+<body>
+	<!-- Header -->
+	<div class="sleepycatcollbrationwithLD">
+		<div class="headersleepycat">
+			<div class="sleepycontainer">
+				<div class="sleepycatinner">
+					<div class="logosleepy">
+						<img src="img/logo.png" alt="Logo" />
+						<p>
+							Coming together to support better sleep and happier bellies.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Dogs aren’t broken. There food is. -->
+		<div class="dogbrokersec">
+			<div class="sleepycontainer">
+				<div class="row">
+					<div class="col-4">
+						<div class="dogbrokercontent">
+							<h2>Dogs aren’t broken. <span>There food is.</span></h2>
+							<p>
+								Just as a comfortable bed supports better rest, food that’s easy on the gut supports calmer days, deeper sleep, and long-term wellbeing. <br><br>At Lulu & Daisy, we make real food the way you would at home - because <span>better food is the foundation of a better life.</span>
+							</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="dogbrokerimage">
+							<img src="img/dogimg.png" alt="Image"/>
+							<h6>Rest, nourishment, wellbeing</h6>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<!-- WHAT YOU RECEIVED -->
+		<div class="whatyourecieved">
+			<div class="sleepycontainer">
+				<div class="row">
+					<div class="col-45">
+						<div class="foodimage">
+							<img src="img/dogfood.png" alt="image" />
+						</div>
+					</div>
+					<div class="col-45">
+						<div class="dogfoodcontent">
+							<h6>WHAT YOU RECEIVED</h6>
+							<h4>You’ve just received our <span>Sweet Potato</span> real-food treat — sweet potato as the hero, supported by a few gentle, purposeful ingredients.</h4>
+							<p>A light, everyday treat designed for regular rewards.</p>
+							<p><span>INGREDIENTS</span></p>
+							<ul>
+								<li>
+									<span>Sweet Potato</span>
+								</li>
+								<li>
+									<span>Amaranth flour</span>
+								</li>
+								<li>
+									<span>Chia Seeds</span>
+								</li>
+								<li>
+									<span>Coconut Oil</span>
+								</li>
+								<li>
+									<span>Rosemary</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Everyday treats, made the same way -->
+		<div class="treatbundlesec">
+			<div class="sleepycontainer">
+				<div class="treatbundlecontent">
+					<h2>Everyday treats, made the same way</h2>
+					<p>Simple ingredients. Gentle on digestion. <br>Made for regular use - not indulgence.</p>
+					<a href="" class="themebtn">
+						SHOP TREAT BUNDLES
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- SHOP TREAT BUNDLES Slider	 -->
+		<div class="shoptreatbundleslidersec">
+			<div class="sleepycontainer">
+				<div class="shoptreatbundleslider">
+					<div class="shoptreatbundleslide">
+						<div class="shoptreatbundleslideinner">
+							<div class="shoptreatbundleslideimage">
+							</div>
+							<div class="shoptreatbundleslidecontent">
+								<div class="bidgepill"><span>MOST POPULAR</span></div>
+								<h3>Everyday Treat Bundle</h3>
+								<p>Daily rewards for training and bonding</p>
+								<div class="bundleprice">
+									<p>₹899<p>
+								</div>
+								<a href="" class="themebtn">
+									ADD TO CART
+								</a>
+								<div class="howtouseblock">
+									<h6>
+										What’s inside & how to use 
+										<span class="icon">
+											<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+												 width="80px" height="80px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+											<g>
+												<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+													c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+													c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/>
+											</g>
+											</svg>
+										</span>
+									</h6>
+									<div class="howtouseblocktext">
+										<h6>CONTENTS</h6>
+										<p>
+											- Sweet Potato x 2 <br>
+											- Dehydrated Chicken Jerky x 1 <br>
+											- Apple, Beetroot & Carrot x 1 <br>
+											- Apple, Beetroot & Carrot x 2
+										</p>
+										<h6>HOW TO USE</h6>
+										<p>Perfect for daily training sessions and positive reinforcement. Rotate between flavours to keep things interesting for your dog.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shoptreatbundleslide">
+						<div class="shoptreatbundleslideinner">
+							<div class="shoptreatbundleslideimage">
+							</div>
+							<div class="shoptreatbundleslidecontent">
+								<div class="bidgepill"><span>MOST POPULAR</span></div>
+								<h3>Everyday Treat Bundle</h3>
+								<p>Daily rewards for training and bonding</p>
+								<div class="bundleprice">
+									<p>₹899<p>
+								</div>
+								<a href="" class="themebtn">
+									ADD TO CART
+								</a>
+								<div class="howtouseblock">
+									<h6>
+										What’s inside & how to use 
+										<span class="icon">
+											<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+												 width="80px" height="80px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+											<g>
+												<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+													c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+													c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/>
+											</g>
+											</svg>
+										</span>
+									</h6>
+									<div class="howtouseblocktext">
+										<h6>CONTENTS</h6>
+										<p>
+											- Sweet Potato x 2 <br>
+											- Dehydrated Chicken Jerky x 1 <br>
+											- Apple, Beetroot & Carrot x 1 <br>
+											- Apple, Beetroot & Carrot x 2
+										</p>
+										<h6>HOW TO USE</h6>
+										<p>Perfect for daily training sessions and positive reinforcement. Rotate between flavours to keep things interesting for your dog.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shoptreatbundleslide">
+						<div class="shoptreatbundleslideinner">
+							<div class="shoptreatbundleslideimage">
+							</div>
+							<div class="shoptreatbundleslidecontent">
+								<div class="bidgepill"><span>MOST POPULAR</span></div>
+								<h3>Everyday Treat Bundle</h3>
+								<p>Daily rewards for training and bonding</p>
+								<div class="bundleprice">
+									<p>₹899<p>
+								</div>
+								<a href="" class="themebtn">
+									ADD TO CART
+								</a>
+								<div class="howtouseblock">
+									<h6>
+										What’s inside & how to use 
+										<span class="icon">
+											<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+												 width="80px" height="80px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+											<g>
+												<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+													c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+													c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/>
+											</g>
+											</svg>
+										</span>
+									</h6>
+									<div class="howtouseblocktext">
+										<h6>CONTENTS</h6>
+										<p>
+											- Sweet Potato x 2 <br>
+											- Dehydrated Chicken Jerky x 1 <br>
+											- Apple, Beetroot & Carrot x 1 <br>
+											- Apple, Beetroot & Carrot x 2
+										</p>
+										<h6>HOW TO USE</h6>
+										<p>Perfect for daily training sessions and positive reinforcement. Rotate between flavours to keep things interesting for your dog.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shoptreatbundleslide">
+						<div class="shoptreatbundleslideinner">
+							<div class="shoptreatbundleslideimage">
+							</div>
+							<div class="shoptreatbundleslidecontent">
+								<div class="bidgepill"><span>MOST POPULAR</span></div>
+								<h3>Everyday Treat Bundle</h3>
+								<p>Daily rewards for training and bonding</p>
+								<div class="bundleprice">
+									<p>₹899<p>
+								</div>
+								<a href="" class="themebtn">
+									ADD TO CART
+								</a>
+								<div class="howtouseblock">
+									<h6>
+										What’s inside & how to use 
+										<span class="icon">
+											<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+												 width="80px" height="80px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+											<g>
+												<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+													c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+													c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/>
+											</g>
+											</svg>
+										</span>
+									</h6>
+									<div class="howtouseblocktext">
+										<h6>CONTENTS</h6>
+										<p>
+											- Sweet Potato x 2 <br>
+											- Dehydrated Chicken Jerky x 1 <br>
+											- Apple, Beetroot & Carrot x 1 <br>
+											- Apple, Beetroot & Carrot x 2
+										</p>
+										<h6>HOW TO USE</h6>
+										<p>Perfect for daily training sessions and positive reinforcement. Rotate between flavours to keep things interesting for your dog.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SHOP TREAT BUNDLES Slider	 -->
+		<div class="singletreatbundleslidersec">
+			<div class="sleepycontainer">
+				<div class="contentwithbox">
+					<p>Prefer to try one flavour first? <br>Single packs available below.</p>
+
+				</div>
+				<div class="singletreatbundleslider">
+					<div class="singletreatbundleslide">
+						<div class="singletreatbundleslideinner">
+							<div class="singletreatbundleslideimage">
+							</div>
+							<div class="singletreatbundleslidecontent">
+								<h3>Everyday Treat Bundle</h3>
+								<p>Daily rewards for training and bonding</p>
+								<div class="bundleprice">
+									<p>₹899<p>
+								</div>
+								<a href="" class="themebtn outlinebtn">
+									ADD
+								</a>
+								<div class="howtouseblock">
+									<h6>
+										Details
+										<span class="icon">
+											<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+												 width="80px" height="80px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+											<g>
+												<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+													c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+													c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/>
+											</g>
+											</svg>
+										</span>
+									</h6>
+									<div class="howtouseblocktext">
+										<h6>CONTENTS</h6>
+										<p>
+											- Sweet Potato x 2 <br>
+											- Dehydrated Chicken Jerky x 1 <br>
+											- Apple, Beetroot & Carrot x 1 <br>
+											- Apple, Beetroot & Carrot x 2
+										</p>
+										<h6>HOW TO USE</h6>
+										<p>Perfect for daily training sessions and positive reinforcement. Rotate between flavours to keep things interesting for your dog.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="singletreatbundleslide">
+						<div class="singletreatbundleslideinner">
+							<div class="singletreatbundleslideimage">
+							</div>
+							<div class="singletreatbundleslidecontent">
+								<h3>Everyday Treat Bundle</h3>
+								<p>Daily rewards for training and bonding</p>
+								<div class="bundleprice">
+									<p>₹899<p>
+								</div>
+								<a href="" class="themebtn outlinebtn">
+									ADD
+								</a>
+								<div class="howtouseblock">
+									<h6>
+										Details
+										<span class="icon">
+											<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+												 width="80px" height="80px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+											<g>
+												<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+													c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+													c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/>
+											</g>
+											</svg>
+										</span>
+									</h6>
+									<div class="howtouseblocktext">
+										<h6>CONTENTS</h6>
+										<p>
+											- Sweet Potato x 2 <br>
+											- Dehydrated Chicken Jerky x 1 <br>
+											- Apple, Beetroot & Carrot x 1 <br>
+											- Apple, Beetroot & Carrot x 2
+										</p>
+										<h6>HOW TO USE</h6>
+										<p>Perfect for daily training sessions and positive reinforcement. Rotate between flavours to keep things interesting for your dog.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="singletreatbundleslide">
+						<div class="singletreatbundleslideinner">
+							<div class="singletreatbundleslideimage">
+							</div>
+							<div class="singletreatbundleslidecontent">
+								<h3>Everyday Treat Bundle</h3>
+								<p>Daily rewards for training and bonding</p>
+								<div class="bundleprice">
+									<p>₹899<p>
+								</div>
+								<a href="" class="themebtn outlinebtn">
+									ADD
+								</a>
+								<div class="howtouseblock">
+									<h6>
+										Details
+										<span class="icon">
+											<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+												 width="80px" height="80px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+											<g>
+												<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+													c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+													c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/>
+											</g>
+											</svg>
+										</span>
+									</h6>
+									<div class="howtouseblocktext">
+										<h6>CONTENTS</h6>
+										<p>
+											- Sweet Potato x 2 <br>
+											- Dehydrated Chicken Jerky x 1 <br>
+											- Apple, Beetroot & Carrot x 1 <br>
+											- Apple, Beetroot & Carrot x 2
+										</p>
+										<h6>HOW TO USE</h6>
+										<p>Perfect for daily training sessions and positive reinforcement. Rotate between flavours to keep things interesting for your dog.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="singletreatbundleslide">
+						<div class="singletreatbundleslideinner">
+							<div class="singletreatbundleslideimage">
+							</div>
+							<div class="singletreatbundleslidecontent">
+								<h3>Everyday Treat Bundle</h3>
+								<p>Daily rewards for training and bonding</p>
+								<div class="bundleprice">
+									<p>₹899<p>
+								</div>
+								<a href="" class="themebtn outlinebtn">
+									ADD
+								</a>
+								<div class="howtouseblock">
+									<h6>
+										Details
+										<span class="icon">
+											<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+												 width="80px" height="80px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+											<g>
+												<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+													c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+													c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/>
+											</g>
+											</svg>
+										</span>
+									</h6>
+									<div class="howtouseblocktext">
+										<h6>CONTENTS</h6>
+										<p>
+											- Sweet Potato x 2 <br>
+											- Dehydrated Chicken Jerky x 1 <br>
+											- Apple, Beetroot & Carrot x 1 <br>
+											- Apple, Beetroot & Carrot x 2
+										</p>
+										<h6>HOW TO USE</h6>
+										<p>Perfect for daily training sessions and positive reinforcement. Rotate between flavours to keep things interesting for your dog.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Notify Newsletter Section -->
+		<div class="notifynewslettersec">
+			<div class="sleepycontainer">
+				<div class="notifynewslettercontent">
+					<h6>MUMBAI ONLY</h6>
+					<h2>Fresh meals for dogs, cooked in Mumbai</h2>
+					<h5>We also cook fresh meals and bone broth locally to ensure quality and safety.</h5>
+					<p>
+						Outside Mumbai? Treats ship pan-India — we’ll notify you when meals and broth expand.
+					</p>
+					<div class="notifybox">
+						<div class="notifyboxwrapper">
+							<input type="text" placeholder="Your email">
+							<button type="submit" class="newsletterbtn">Notify me</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- discountsec -->
+		<div class="diuscountlettersec">
+			<div class="sleepycontainer">
+				<div class="diuscountlettercontent">
+					<div class="diuscountlettercontentinner">
+						<p>YOUR 15% OFF SLEEPYCAT WELCOME</p>
+						<h2>Use code <span>SLEEPYCAT</span> at checkout</h2>
+						<h6>Use when you’re ready</h6>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+
+		<div class="madeinsmallbraches">
+			<ul class="madeinsmallbox">
+				<li>Made in small batches</li>
+				<li>Trusted by pet parents across India</li>
+				<li>No filler or shortcuts</li>
+			</ul>
+			<div class="copybottom">
+				<p>© 2026 Lulu & Daisy - Made with care in India</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script>
+
+    	$('.singletreatbundleslider, .shoptreatbundleslider').slick({
+            cssEase: 'linear',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 6000,
+            prevArrow: `<button type="button" class="customagentslick slick-prev">
+              <svg width="24" height="24" viewBox="-19.04 0 75.804 75.804" xmlns="http://www.w3.org/2000/svg"  style="transform: rotate(180deg);">
+                <g id="Group_65" data-name="Group 65" transform="translate(-831.568 -384.448)">
+                  <path id="Path_57" data-name="Path 57" d="M833.068,460.252a1.5,1.5,0,0,1-1.061-2.561l33.557-33.56a2.53,2.53,0,0,0,0-3.564l-33.557-33.558a1.5,1.5,0,0,1,2.122-2.121l33.556,33.558a5.53,5.53,0,0,1,0,7.807l-33.557,33.56A1.5,1.5,0,0,1,833.068,460.252Z" fill="#0c2c67"/>
+                </g>
+              </svg>
+            </button>`,
+
+            nextArrow: `<button type="button" class="customagentslick slick-next">
+              <svg width="24" height="24" viewBox="-19.04 0 75.804 75.804" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group_65" data-name="Group 65" transform="translate(-831.568 -384.448)">
+                  <path id="Path_57" data-name="Path 57" d="M833.068,460.252a1.5,1.5,0,0,1-1.061-2.561l33.557-33.56a2.53,2.53,0,0,0,0-3.564l-33.557-33.558a1.5,1.5,0,0,1,2.122-2.121l33.556,33.558a5.53,5.53,0,0,1,0,7.807l-33.557,33.56A1.5,1.5,0,0,1,833.068,460.252Z" fill="#0c2c67"/>
+                </g>
+              </svg>
+            </button>`,
+            responsive: [
+                {
+                  breakpoint: 800,
+                  settings: {
+                    slidesToShow: 2,
+                  }
+                },
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                  }
+                }
+              ]
+          });
+      </script>
+      <script>
+		  $(document).ready(function () {
+		    $('.howtouseblock h6').on('click', function () {
+		      $(this)
+		        .closest('.howtouseblock')
+		        .find('.howtouseblocktext')
+		        .slideToggle(300);
+		    });
+		  });
+		</script>
+
+
+</body>
+</html>
