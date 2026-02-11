@@ -506,6 +506,174 @@
 	.diuscountlettercontentinner:hover * {
 	    color: #fff;
 	}
+	/* Overlay */
+	.cart-drawer {
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+	    width: 100%;
+	    background: linear-gradient(to bottom, #2a1f18, #1b140f);
+	    color: #fff;
+	    font-family: sans-serif;
+	    transform: translateY(100%);
+	    transition: 0.4s ease;
+	    z-index: 1000;
+	}
+
+	.cart-drawer.active {
+	    transform: translateY(0);
+	}
+
+	.cart-overlay {
+	    position: fixed;
+	    inset: 0;
+	    background: rgba(0,0,0,0.6);
+	    opacity: 0;
+	    visibility: hidden;
+	    transition: 0.3s;
+	}
+
+	.cart-overlay.active {
+	    opacity: 1;
+	    visibility: visible;
+	}
+
+	/* Summary Bar */
+	.cart-summary {
+	    padding: 15px 20px;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    cursor: pointer;
+	    border-bottom: 1px solid rgba(255,255,255,0.1);
+	}
+
+	.cart-summary-left {
+	    display: flex;
+	    align-items: center;
+	    gap: 8px;
+	}
+
+	.cart-summary-right {
+	    display: flex;
+	    align-items: center;
+	    gap: 10px;
+	}
+
+	.toggle-cart {
+	    font-size: 14px;
+	}
+
+	/* Cart Content */
+	.cart-content {
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: 0.4s ease;
+	}
+
+	.cart-content.open {
+	    max-height: 600px;
+	    padding: 20px;
+	}
+
+	/* Items */
+	.cart-item {
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    margin-bottom: 20px;
+	}
+
+	.cart-item h5 {
+	    margin: 0;
+	    font-size: 14px;
+	}
+
+	.cart-qty {
+	    display: flex;
+	    align-items: center;
+	    background: #3a2b22;
+	    padding: 5px 8px;
+	    gap: 10px;
+	}
+
+	.cart-qty button {
+	    background: none;
+	    border: none;
+	    color: #fff;
+	    cursor: pointer;
+	}
+
+	.cart-price {
+	    display: flex;
+	    align-items: center;
+	    gap: 10px;
+	}
+
+	.remove-item {
+	    cursor: pointer;
+	    font-size: 14px;
+	}
+
+	/* Discount */
+	.cart-discount {
+	    text-align: center;
+	    margin: 15px 0;
+	    font-size: 13px;
+	}
+
+	.cart-discount span {
+	    color: #6fcf97;
+	}
+
+	/* Checkout Button */
+	.checkout-btn {
+	    width: 100%;
+	    background: #4f7d5c;
+	    border: none;
+	    padding: 14px;
+	    font-weight: 600;
+	    color: #fff;
+	    cursor: pointer;
+	}
+
+	.cart-drawer * {
+	    font-family: 'Inter';
+	}
+	.cart-body .cart-item h5 {
+		margin: 0;	
+	}
+	.cart-header h4, .cart-close {
+	    margin: 0;
+	    font-weight: 300;
+	}
+
+	.cart-body .cart-item h5 {
+	    font-size: 14px;
+	    font-weight: 300;
+	    max-width: 130px;
+	    line-height: 1.6;
+	}
+
+	.cart-body .cart-item span.remove-item {
+	    margin-left: 10px;
+	    font-size: 10px;
+	    cursor: pointer;
+	}
+
+	.cart-drawer .cart-total {
+	    font-weight: 300;
+	    margin-bottom: 20px;
+	}
+
+	.cart-drawer .cart-total span.total-price {
+	    font-weight: 600;
+	}
+
+	button.checkout-btn {
+	    font-weight: 300;
+	}
+
 	@media(max-width: 1025px) {
 		.sleepycontainer {
 			 width: 90%;
@@ -538,7 +706,7 @@
 		}
 		.dogbrokercontent h2 {
 		    max-width: unset;
-		    font-size: 48px;
+		    font-size: 34px;
 		    line-height: 1.1;
 		    margin: 0 auto;
 		    text-align: center;
@@ -553,12 +721,16 @@
 		.col-45 {
 		    width: 100%;
 		}
-		.whatyourecieved .row {
+		.dogbrokersec .row {
 			flex-direction: column-reverse;
 		}
 		.dogfoodcontent {
 			text-align: center;
-			margin-bottom: 60px;
+			margin-top: 60px;
+		}
+		.dogbrokercontent {
+			margin-top: 60px;
+			margin-bottom: 0;
 		}
 		.dogfoodcontent ul {
 			justify-content: center;
@@ -744,7 +916,7 @@
 								<div class="bundleprice">
 									<p>₹899<p>
 								</div>
-								<a href="" class="themebtn">
+								<a href="javascript:;" class="themebtn add-to-cart" data-name="Everyday Treat Bundle" data-price="899">
 									ADD TO CART
 								</a>
 								<div class="howtouseblock">
@@ -787,7 +959,7 @@
 								<div class="bundleprice">
 									<p>₹899<p>
 								</div>
-								<a href="" class="themebtn">
+								<a href="javascript:;" class="themebtn add-to-cart" data-name="Everyday Treat Bundle" data-price="899">
 									ADD TO CART
 								</a>
 								<div class="howtouseblock">
@@ -830,7 +1002,7 @@
 								<div class="bundleprice">
 									<p>₹899<p>
 								</div>
-								<a href="" class="themebtn">
+								<a href="javascript:;" class="themebtn add-to-cart" data-name="Everyday Treat Bundle" data-price="899">
 									ADD TO CART
 								</a>
 								<div class="howtouseblock">
@@ -873,7 +1045,7 @@
 								<div class="bundleprice">
 									<p>₹899<p>
 								</div>
-								<a href="" class="themebtn">
+								<a href="javascript:;" class="themebtn add-to-cart" data-name="Everyday Treat Bundle" data-price="899">
 									ADD TO CART
 								</a>
 								<div class="howtouseblock">
@@ -927,7 +1099,9 @@
 								<div class="bundleprice">
 									<p>₹899<p>
 								</div>
-								<a href="" class="themebtn outlinebtn">
+								<a href="javascript:;" class="themebtn outlinebtn add-to-cart"
+								   data-name="Everyday Treat Bundle"
+								   data-price="899">
 									ADD
 								</a>
 								<div class="howtouseblock">
@@ -969,7 +1143,9 @@
 								<div class="bundleprice">
 									<p>₹899<p>
 								</div>
-								<a href="" class="themebtn outlinebtn">
+								<a href="javascript:;" class="themebtn outlinebtn add-to-cart"
+								   data-name="Everyday Treat Bundle"
+								   data-price="899">
 									ADD
 								</a>
 								<div class="howtouseblock">
@@ -1011,7 +1187,9 @@
 								<div class="bundleprice">
 									<p>₹899<p>
 								</div>
-								<a href="" class="themebtn outlinebtn">
+								<a href="javascript:;" class="themebtn outlinebtn add-to-cart"
+								   data-name="Everyday Treat Bundle"
+								   data-price="899">
 									ADD
 								</a>
 								<div class="howtouseblock">
@@ -1053,7 +1231,9 @@
 								<div class="bundleprice">
 									<p>₹899<p>
 								</div>
-								<a href="" class="themebtn outlinebtn">
+								<a href="javascript:;" class="themebtn outlinebtn add-to-cart"
+								   data-name="Everyday Treat Bundle"
+								   data-price="899">
 									ADD
 								</a>
 								<div class="howtouseblock">
@@ -1135,6 +1315,45 @@
 			</div>
 		</div>
 	</div>
+	<!-- Cart Drawer -->
+	<!-- <div class="cart-overlay"></div> -->
+
+	<div class="cart-drawer">
+
+	    <!-- Top Summary Bar -->
+	    <div class="cart-summary">
+	        <div class="cart-summary-left">
+	            <span class="cart-count">0 items</span>
+	        </div>
+	        <div class="cart-summary-right">
+	            ₹<span class="cart-total-top">0</span>
+	            <span class="toggle-cart">
+					<svg fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+					<g>
+						<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+							c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+							c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"></path>
+					</g>
+					</svg>
+	            </span>
+	        </div>
+	    </div>
+
+	    <!-- Expandable Body -->
+	    <div class="cart-content">
+
+	        <div class="cart-items"></div>
+
+	        <div class="cart-discount">
+	            Remember code <span>SLEEPYCAT</span>
+	        </div>
+
+	        <button class="checkout-btn">
+	            CHECKOUT - ₹<span class="checkout-total">0</span>
+	        </button>
+
+	    </div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
@@ -1189,6 +1408,123 @@
 		    });
 		  });
 		</script>
+		<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const drawer = document.querySelector(".cart-drawer");
+    const overlay = document.querySelector(".cart-overlay");
+    const cartItemsEl = document.querySelector(".cart-items");
+    const cartCountEl = document.querySelector(".cart-count");
+    const cartTotalTop = document.querySelector(".cart-total-top");
+    const checkoutTotal = document.querySelector(".checkout-total");
+    const cartContent = document.querySelector(".cart-content");
+    const cartSummary = document.querySelector(".cart-summary");
+
+    let cart = [];
+
+    // Add to cart
+    document.querySelectorAll(".add-to-cart").forEach(btn => {
+        btn.addEventListener("click", function () {
+
+            const name = this.dataset.name;
+            const price = parseInt(this.dataset.price);
+
+            cart.push({
+                id: Date.now(),
+                name,
+                price,
+                qty: 1
+            });
+
+            updateCart();
+
+            if (drawer) drawer.classList.add("active");
+            if (overlay) overlay.classList.add("active");
+            if (cartContent) cartContent.classList.add("open");
+        });
+    });
+
+    // Toggle accordion (safe check)
+    if (cartSummary) {
+        cartSummary.addEventListener("click", function () {
+            cartContent.classList.toggle("open");
+        });
+    }
+
+    if (overlay) {
+        overlay.addEventListener("click", function () {
+            drawer.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+    }
+
+    function updateCart() {
+        cartItemsEl.innerHTML = "";
+        let total = 0;
+
+        cart.forEach((item, index) => {
+            total += item.price * item.qty;
+
+            cartItemsEl.innerHTML += `
+                <div class="cart-item">
+                    <div>
+                        <h5>${item.name}</h5>
+                    </div>
+
+                    <div class="cart-qty">
+                        <button type="button" onclick="changeQty(${index}, -1)">-</button>
+                        <span>${item.qty}</span>
+                        <button type="button" onclick="changeQty(${index}, 1)">+</button>
+                    </div>
+
+                    <div class="cart-price">
+                        ₹${item.price * item.qty}
+                        <span class="remove-item" onclick="removeItem(${index})">✕</span>
+                    </div>
+                </div>
+            `;
+        });
+
+        cartCountEl.innerText = cart.length + " items";
+        cartTotalTop.innerText = total;
+        checkoutTotal.innerText = total;
+    }
+
+    // ✅ Qty change
+    window.changeQty = function(index, change) {
+
+        index = parseInt(index); // important
+
+        if (!cart[index]) return;
+
+        cart[index].qty += change;
+
+        if (cart[index].qty <= 0) {
+            cart.splice(index, 1);
+        }
+
+        updateCart();
+    }
+
+    // ✅ Remove item (FIXED)
+    window.removeItem = function(index) {
+
+        index = parseInt(index); // important
+
+        if (!cart[index]) return;
+
+        cart.splice(index, 1);
+
+        updateCart();
+    }
+
+});
+</script>
+
+
+
+
+
 
 
 </body>
