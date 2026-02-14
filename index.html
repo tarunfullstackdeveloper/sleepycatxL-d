@@ -7,6 +7,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
 	<style>
 	.sleepycatcollbrationwithLD * {
@@ -31,6 +33,9 @@
 
 	.sleepycatinner .logosleepy img {
 	    width: 100%;
+	}
+	.cart-summary.open svg {
+	    transform: rotate(180deg);
 	}
 
 	.sleepycatinner .logosleepy p {
@@ -108,10 +113,10 @@
 		width: 50%;
 	}
 	.dogbrokersec {
-	    padding-bottom: 50px;
+	    padding-bottom: 84px;
 	}
 	.whatyourecieved {
-	    padding: 116px 0;
+	    padding: 84px 0;
 	    background: #FAFAF8;
 	}
 	.foodimage img {
@@ -162,7 +167,7 @@
 	    row-gap: 24px;
 	}
 	.shoptreatbundleslidersec {
-	    padding: 50px 0;
+	    padding: 34px 0;
 	    background: #fafaf8;
 	}
 
@@ -199,7 +204,7 @@
 	    font-size: 13px;
 	    text-transform: uppercase;
 	    font-family: 'Inter';
-	    font-weight: 300;
+	    font-weight: 600;
 	    text-decoration: none;
 	    display: inline-block;
 	}
@@ -218,7 +223,7 @@
 	    text-transform: uppercase;
 	}
 	.singletreatbundleslidersec {
-		padding: 90px 0;
+		padding: 84px 0 34px;
 	}
 	.notifynewslettersec {
 	    padding: 84px 0;
@@ -321,7 +326,7 @@
 	    font-family: 'Cormorant Garamond';
 	    margin: 0;
 	}
-	.madeinsmallbraches ul {max-width: 950px;display: flex;align-items: center;justify-content: space-between;border-bottom: 1px solid #f1f1f1;border-top: 1px solid #f1f1f1;padding: 90px 0;list-style: none;margin: 0 auto;}
+	.madeinsmallbraches ul {max-width: 950px;display: flex;align-items: center;justify-content: space-between;border-bottom: 1px solid #f1f1f1;border-top: 1px solid #f1f1f1;padding: 84px 0;list-style: none;margin: 0 auto;}
 
 	.madeinsmallbraches ul li {font-size: 18px;color: #6E6E6E;font-weight: 400;}
 
@@ -345,8 +350,8 @@
 
 	.shoptreatbundleslideimage, .singletreatbundleslideimage {
 	    width: 100%;
-	    background: #fff;
-	    border: 1px solid #333;
+	    background: #f1f1f1;
+	    border: 1px solid #f1f1f1;
 	    height: 300px;
 	}
 
@@ -833,15 +838,15 @@
 				<div class="row">
 					<div class="col-4">
 						<div class="dogbrokercontent">
-							<h2>Dogs aren’t broken. <span>There food is.</span></h2>
-							<p>
+							<h2 class=" wow animate__animated animate__fadeInUp">Dogs aren’t broken. <span>There food is.</span></h2>
+							<p class=" wow animate__animated animate__fadeInUp">
 								Just as a comfortable bed supports better rest, food that’s easy on the gut supports calmer days, deeper sleep, and long-term wellbeing. <br><br>At Lulu & Daisy, we make real food the way you would at home - because <span>better food is the foundation of a better life.</span>
 							</p>
 						</div>
 					</div>
 					<div class="col-4">
 						<div class="dogbrokerimage">
-							<img src="img/dogimg.png" alt="Image"/>
+							<img src="img/dogimg.png" alt="Image" class="wow animate__animated animate__fadeInRight"/>
 							<h6>Rest, nourishment, wellbeing</h6>
 						</div>
 					</div>
@@ -854,12 +859,12 @@
 			<div class="sleepycontainer">
 				<div class="row">
 					<div class="col-45">
-						<div class="foodimage">
+						<div class="foodimage  wow animate__animated animate__fadeInLeft">
 							<img src="img/dogfood.png" alt="image" />
 						</div>
 					</div>
 					<div class="col-45">
-						<div class="dogfoodcontent">
+						<div class="dogfoodcontent  wow animate__animated animate__fadeInUp">
 							<h6>WHAT YOU RECEIVED</h6>
 							<h4>You’ve just received our <span>Sweet Potato</span> real-food treat — sweet potato as the hero, supported by a few gentle, purposeful ingredients.</h4>
 							<p>A light, everyday treat designed for regular rewards.</p>
@@ -891,9 +896,9 @@
 		<div class="treatbundlesec">
 			<div class="sleepycontainer">
 				<div class="treatbundlecontent">
-					<h2>Everyday treats, made the same way</h2>
-					<p>Simple ingredients. Gentle on digestion. <br>Made for regular use - not indulgence.</p>
-					<a href="" class="themebtn">
+					<h2 class=" wow animate__animated animate__fadeInUp">Everyday treats, made the same way</h2>
+					<p class=" wow animate__animated animate__fadeInUp">Simple ingredients. Gentle on digestion. <br>Made for regular use - not indulgence.</p>
+					<a href="" class="themebtn wow animate__animated animate__fadeInUp">
 						SHOP TREAT BUNDLES
 					</a>
 				</div>
@@ -906,7 +911,7 @@
 			<div class="sleepycontainer">
 				<div class="shoptreatbundleslider">
 					<div class="shoptreatbundleslide">
-						<div class="shoptreatbundleslideinner">
+						<div class="shoptreatbundleslideinner wow animate__animated animate__fadeInUp">
 							<div class="shoptreatbundleslideimage">
 							</div>
 							<div class="shoptreatbundleslidecontent">
@@ -949,7 +954,7 @@
 						</div>
 					</div>
 					<div class="shoptreatbundleslide">
-						<div class="shoptreatbundleslideinner">
+						<div class="shoptreatbundleslideinner wow animate__animated animate__fadeInUp">
 							<div class="shoptreatbundleslideimage">
 							</div>
 							<div class="shoptreatbundleslidecontent">
@@ -992,7 +997,7 @@
 						</div>
 					</div>
 					<div class="shoptreatbundleslide">
-						<div class="shoptreatbundleslideinner">
+						<div class="shoptreatbundleslideinner wow animate__animated animate__fadeInUp">
 							<div class="shoptreatbundleslideimage">
 							</div>
 							<div class="shoptreatbundleslidecontent">
@@ -1035,7 +1040,7 @@
 						</div>
 					</div>
 					<div class="shoptreatbundleslide">
-						<div class="shoptreatbundleslideinner">
+						<div class="shoptreatbundleslideinner wow animate__animated animate__fadeInUp">
 							<div class="shoptreatbundleslideimage">
 							</div>
 							<div class="shoptreatbundleslidecontent">
@@ -1090,7 +1095,7 @@
 				</div>
 				<div class="singletreatbundleslider">
 					<div class="singletreatbundleslide">
-						<div class="singletreatbundleslideinner">
+						<div class="singletreatbundleslideinner  wow animate__animated animate__fadeInUp">
 							<div class="singletreatbundleslideimage">
 							</div>
 							<div class="singletreatbundleslidecontent">
@@ -1134,7 +1139,7 @@
 						</div>
 					</div>
 					<div class="singletreatbundleslide">
-						<div class="singletreatbundleslideinner">
+						<div class="singletreatbundleslideinner wow animate__animated animate__fadeInUp">
 							<div class="singletreatbundleslideimage">
 							</div>
 							<div class="singletreatbundleslidecontent">
@@ -1178,7 +1183,7 @@
 						</div>
 					</div>
 					<div class="singletreatbundleslide">
-						<div class="singletreatbundleslideinner">
+						<div class="singletreatbundleslideinner wow animate__animated animate__fadeInUp">
 							<div class="singletreatbundleslideimage">
 							</div>
 							<div class="singletreatbundleslidecontent">
@@ -1222,7 +1227,7 @@
 						</div>
 					</div>
 					<div class="singletreatbundleslide">
-						<div class="singletreatbundleslideinner">
+						<div class="singletreatbundleslideinner  wow animate__animated animate__fadeInUp">
 							<div class="singletreatbundleslideimage">
 							</div>
 							<div class="singletreatbundleslidecontent">
@@ -1274,13 +1279,13 @@
 		<div class="notifynewslettersec">
 			<div class="sleepycontainer">
 				<div class="notifynewslettercontent">
-					<h6>MUMBAI ONLY</h6>
-					<h2>Fresh meals for dogs, cooked in Mumbai</h2>
-					<h5>We also cook fresh meals and bone broth locally to ensure quality and safety.</h5>
-					<p>
+					<h6 class=" wow animate__animated animate__fadeInUp">MUMBAI ONLY</h6>
+					<h2 class=" wow animate__animated animate__fadeInUp">Fresh meals for dogs, cooked in Mumbai</h2>
+					<h5 class=" wow animate__animated animate__fadeInUp">We also cook fresh meals and bone broth locally to ensure quality and safety.</h5>
+					<p class=" wow animate__animated animate__fadeInUp">
 						Outside Mumbai? Treats ship pan-India — we’ll notify you when meals and broth expand.
 					</p>
-					<div class="notifybox">
+					<div class="notifybox  wow animate__animated animate__fadeInUp">
 						<div class="notifyboxwrapper">
 							<input type="text" placeholder="Your email">
 							<button type="submit" class="newsletterbtn">Notify me</button>
@@ -1295,16 +1300,16 @@
 			<div class="sleepycontainer">
 				<div class="diuscountlettercontent">
 					<div class="diuscountlettercontentinner">
-						<p>YOUR 15% OFF SLEEPYCAT WELCOME</p>
-						<h2>Use code <span>SLEEPYCAT</span> at checkout</h2>
-						<h6>Use when you’re ready</h6>
+						<p class=" wow animate__animated animate__fadeInUp">YOUR 15% OFF SLEEPYCAT WELCOME</p>
+						<h2 class=" wow animate__animated animate__fadeInUp">Use code <span>SLEEPYCAT</span> at checkout</h2>
+						<h6 class=" wow animate__animated animate__fadeInUp">Use when you’re ready</h6>
 					</div>
 				</div>	
 			</div>
 		</div>
 
 
-		<div class="madeinsmallbraches">
+		<div class="madeinsmallbraches  wow animate__animated animate__fadeInUp">
 			<ul class="madeinsmallbox">
 				<li>Made in small batches</li>
 				<li>Trusted by pet parents across India</li>
@@ -1358,6 +1363,12 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
     <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+	<script>
+	new WOW().init();
+	</script>
+
     <script>
 
     	$('.singletreatbundleslider, .shoptreatbundleslider').slick({
@@ -1441,6 +1452,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (drawer) drawer.classList.add("active");
             if (overlay) overlay.classList.add("active");
             if (cartContent) cartContent.classList.add("open");
+            if (cartSummary) cartSummary.classList.add("open");
         });
     });
 
@@ -1448,6 +1460,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cartSummary) {
         cartSummary.addEventListener("click", function () {
             cartContent.classList.toggle("open");
+            cartSummary.classList.toggle("open");
         });
     }
 
