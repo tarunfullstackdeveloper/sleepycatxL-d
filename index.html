@@ -37,7 +37,16 @@
 	.cart-summary.open svg {
 	    transform: rotate(180deg);
 	}
+	.cart-discount {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    gap: 6px;
+	}
 
+	.copyclipboard {
+	    cursor: pointer;
+	}
 	.sleepycatinner .logosleepy p {
 	    font-size: 14px;
 	    color: #6E6E6E;
@@ -271,7 +280,7 @@
 	}
 
 	.notifynewslettercontent .notifybox .notifyboxwrapper input {
-	    font-size: 10px;
+	    font-size: 15px;
 	    color: #000;
 	    border: 1px solid #E5E5E5;
 	    padding: 16px 15px;
@@ -281,7 +290,7 @@
 	    border: 1px solid #E5E5E5;
 	    background: transparent;
 	    color: #2B2B2B;
-	    font-size: 10px;
+	    font-size: 16px;
 	    padding: 16px 30px;
 	    margin-left: 10px;
 	}
@@ -328,7 +337,7 @@
 	}
 	.madeinsmallbraches ul {max-width: 950px;display: flex;align-items: center;justify-content: space-between;border-bottom: 1px solid #f1f1f1;border-top: 1px solid #f1f1f1;padding: 84px 0;list-style: none;margin: 0 auto;}
 
-	.madeinsmallbraches ul li {font-size: 18px;color: #6E6E6E;font-weight: 400;}
+	.madeinsmallbraches ul li {font-size: 14px;color: #6E6E6E;font-weight: 400;}
 
 	.copybottom {
 	    padding: 54px 0;
@@ -339,7 +348,10 @@
 	    font-size: 14px;
 	    color: #AAAAAA;
 	}
-	.shoptreatbundleslide, .singletreatbundleslide {
+	.shoptreatbundleslide {
+	    padding: 0 15px;
+	}
+	.singletreatbundleslide {
 	    padding: 0 30px;
 	}
 
@@ -354,6 +366,9 @@
 	    border: 1px solid #f1f1f1;
 	    height: 300px;
 	}
+	.shoptreatbundleslideimage {
+		height: 250px;
+	}
 
 	.shoptreatbundleslideimage img, .singletreatbundleslideimage img {
 	    width: 100%;
@@ -362,7 +377,11 @@
 	    
 	}
 
-	.shoptreatbundleslidecontent, .singletreatbundleslidecontent {
+	.shoptreatbundleslidecontent {
+	    padding: 22px 20px;
+	}
+
+	.singletreatbundleslidecontent {
 	    padding: 22px 50px;
 	}
 
@@ -373,11 +392,15 @@
 	    padding: 8px 14px;
 	}
 
-	.shoptreatbundleslidecontent h3, .singletreatbundleslidecontent h3 {
+	.singletreatbundleslidecontent h3 {
 	    font-size: 30px;
 	    color: #2B2B2B;
 	    margin: 30px 0 20px;
 	    font-weight: 600;
+	}
+
+	.shoptreatbundleslidecontent h3 {
+		font-size: 26px;
 	}
 
 	.shoptreatbundleslidecontent p, .singletreatbundleslidecontent p {
@@ -386,13 +409,24 @@
 	    margin: 0;
 	}
 
-	.shoptreatbundleslidecontent .bundleprice p, .singletreatbundleslidecontent .bundleprice p {
+	.shoptreatbundleslidecontent .bundleprice p, .singletreatbundleslidecontent .bundleprice p,
+	.shoptreatbundleslidecontent .bundleprice p del, .singletreatbundleslidecontent .bundleprice p del {
 	    color: #2B2B2B;
 	    margin: 0;
 	    font-size: 30px;
 	    font-family: 'Cormorant Garamond' !important;
 	}
 
+	.shoptreatbundleslidecontent .bundleprice p .offertext, .singletreatbundleslidecontent .bundleprice p .offertext {
+	    color: #fff;
+	    margin: 0;
+	    font-size: 10px;
+	    font-family: 'Inter';
+	    background: #4f6f52;
+	    padding: 6px 10px 8px;
+	    display: inline-block;
+	    border-radius: 4px;
+	}
 	.shoptreatbundleslidecontent .bundleprice, .singletreatbundleslidecontent .bundleprice {
 	    margin: 22px 0;
 	}
@@ -405,7 +439,7 @@
 	}
 
 	.howtouseblock h6 {
-	    font-size: 10px;
+	    font-size: 12px;
 	    color: #6E6E6E;
 	    opacity: 0.75;
 	    display: flex;
@@ -420,11 +454,11 @@
 	}
 
 	.howtouseblock {
-	    margin-top: 62px;
+	    margin-top: 40px;
 	}
 
 	.howtouseblocktext h6 {
-	    font-size: 8px;
+	    font-size: 10px;
 	    color: #6E6E6E;
 	    opacity: 0.75;
 	    margin: 8px 0;
@@ -433,9 +467,9 @@
 	.howtouseblocktext p {
 	    color: #6E6E6E;
 	    opacity: 0.75;
-	    font-size: 8px;
+	    font-size: 10px;
 	    line-height: 1.7;
-	    margin-bottom: 20px;
+	    margin-bottom: 10px;
 	}
 
 	.howtouseblocktext {
@@ -701,7 +735,7 @@
 		}
 
 		.madeinsmallbraches ul li {
-		    font-size: 16px;
+		    font-size: 12px;
 		}
 	}
 	@media(max-width: 500px) {
@@ -803,7 +837,7 @@
 	        padding: 50px 0;
 	    }
 	    .madeinsmallbraches ul li {
-	        font-size: 16px;
+	        font-size: 12px;
 	        padding: 5px 0;
 	    }
 	    .copybottom {
@@ -919,7 +953,7 @@
 								<h3>Everyday Treat Bundle</h3>
 								<p>Daily rewards for training and bonding</p>
 								<div class="bundleprice">
-									<p>₹899<p>
+									<p><del>₹899</del> ₹750 <span class="offertext">15% off</span><p>
 								</div>
 								<a href="javascript:;" class="themebtn add-to-cart" data-name="Everyday Treat Bundle" data-price="899">
 									ADD TO CART
@@ -962,7 +996,7 @@
 								<h3>Everyday Treat Bundle</h3>
 								<p>Daily rewards for training and bonding</p>
 								<div class="bundleprice">
-									<p>₹899<p>
+									<p><del>₹899</del> ₹750 <span class="offertext">15% off</span><p>
 								</div>
 								<a href="javascript:;" class="themebtn add-to-cart" data-name="Everyday Treat Bundle" data-price="899">
 									ADD TO CART
@@ -1005,7 +1039,7 @@
 								<h3>Everyday Treat Bundle</h3>
 								<p>Daily rewards for training and bonding</p>
 								<div class="bundleprice">
-									<p>₹899<p>
+									<p><del>₹899</del> ₹750 <span class="offertext">15% off</span><p>
 								</div>
 								<a href="javascript:;" class="themebtn add-to-cart" data-name="Everyday Treat Bundle" data-price="899">
 									ADD TO CART
@@ -1048,7 +1082,7 @@
 								<h3>Everyday Treat Bundle</h3>
 								<p>Daily rewards for training and bonding</p>
 								<div class="bundleprice">
-									<p>₹899<p>
+									<p><del>₹899</del> ₹750 <span class="offertext">15% off</span><p>
 								</div>
 								<a href="javascript:;" class="themebtn add-to-cart" data-name="Everyday Treat Bundle" data-price="899">
 									ADD TO CART
@@ -1102,7 +1136,7 @@
 								<h3>Everyday Treat Bundle</h3>
 								<p>Daily rewards for training and bonding</p>
 								<div class="bundleprice">
-									<p>₹899<p>
+									<p><del>₹899</del> ₹750 <span class="offertext">15% off</span><p>
 								</div>
 								<a href="javascript:;" class="themebtn outlinebtn add-to-cart"
 								   data-name="Everyday Treat Bundle"
@@ -1146,7 +1180,7 @@
 								<h3>Everyday Treat Bundle</h3>
 								<p>Daily rewards for training and bonding</p>
 								<div class="bundleprice">
-									<p>₹899<p>
+									<p><del>₹899</del> ₹750 <span class="offertext">15% off</span><p>
 								</div>
 								<a href="javascript:;" class="themebtn outlinebtn add-to-cart"
 								   data-name="Everyday Treat Bundle"
@@ -1190,7 +1224,7 @@
 								<h3>Everyday Treat Bundle</h3>
 								<p>Daily rewards for training and bonding</p>
 								<div class="bundleprice">
-									<p>₹899<p>
+									<p><del>₹899</del> ₹750 <span class="offertext">15% off</span><p>
 								</div>
 								<a href="javascript:;" class="themebtn outlinebtn add-to-cart"
 								   data-name="Everyday Treat Bundle"
@@ -1234,7 +1268,7 @@
 								<h3>Everyday Treat Bundle</h3>
 								<p>Daily rewards for training and bonding</p>
 								<div class="bundleprice">
-									<p>₹899<p>
+									<p><del>₹899</del> ₹750 <span class="offertext">15% off</span><p>
 								</div>
 								<a href="javascript:;" class="themebtn outlinebtn add-to-cart"
 								   data-name="Everyday Treat Bundle"
@@ -1287,8 +1321,14 @@
 					</p>
 					<div class="notifybox  wow animate__animated animate__fadeInUp">
 						<div class="notifyboxwrapper">
-							<input type="text" placeholder="Your email">
-							<button type="submit" class="newsletterbtn">Notify me</button>
+							<input 
+							    type="email" 
+							    name="email"
+							    placeholder="Your email"
+							    autocomplete="email"
+							    required
+							  >
+							  <button type="submit" class="newsletterbtn">Notify me</button>
 						</div>
 					</div>
 				</div>
@@ -1351,6 +1391,9 @@
 
 	        <div class="cart-discount">
 	            Remember code <span>SLEEPYCAT</span>
+	            <div class="copyclipboard">
+	            	<svg width="15px" height="15px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M768 832a128 128 0 0 1-128 128H192A128 128 0 0 1 64 832V384a128 128 0 0 1 128-128v64a64 64 0 0 0-64 64v448a64 64 0 0 0 64 64h448a64 64 0 0 0 64-64h64z"/><path fill="#fff" d="M384 128a64 64 0 0 0-64 64v448a64 64 0 0 0 64 64h448a64 64 0 0 0 64-64V192a64 64 0 0 0-64-64H384zm0-64h448a128 128 0 0 1 128 128v448a128 128 0 0 1-128 128H384a128 128 0 0 1-128-128V192A128 128 0 0 1 384 64z"/></svg>
+	            </div>
 	        </div>
 
 	        <button class="checkout-btn">
@@ -1371,7 +1414,45 @@
 
     <script>
 
-    	$('.singletreatbundleslider, .shoptreatbundleslider').slick({
+    	$('.shoptreatbundleslider').slick({
+            cssEase: 'linear',
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 6000,
+            prevArrow: `<button type="button" class="customagentslick slick-prev">
+              <svg width="24" height="24" viewBox="-19.04 0 75.804 75.804" xmlns="http://www.w3.org/2000/svg"  style="transform: rotate(180deg);">
+                <g id="Group_65" data-name="Group 65" transform="translate(-831.568 -384.448)">
+                  <path id="Path_57" data-name="Path 57" d="M833.068,460.252a1.5,1.5,0,0,1-1.061-2.561l33.557-33.56a2.53,2.53,0,0,0,0-3.564l-33.557-33.558a1.5,1.5,0,0,1,2.122-2.121l33.556,33.558a5.53,5.53,0,0,1,0,7.807l-33.557,33.56A1.5,1.5,0,0,1,833.068,460.252Z" fill="#0c2c67"/>
+                </g>
+              </svg>
+            </button>`,
+
+            nextArrow: `<button type="button" class="customagentslick slick-next">
+              <svg width="24" height="24" viewBox="-19.04 0 75.804 75.804" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group_65" data-name="Group 65" transform="translate(-831.568 -384.448)">
+                  <path id="Path_57" data-name="Path 57" d="M833.068,460.252a1.5,1.5,0,0,1-1.061-2.561l33.557-33.56a2.53,2.53,0,0,0,0-3.564l-33.557-33.558a1.5,1.5,0,0,1,2.122-2.121l33.556,33.558a5.53,5.53,0,0,1,0,7.807l-33.557,33.56A1.5,1.5,0,0,1,833.068,460.252Z" fill="#0c2c67"/>
+                </g>
+              </svg>
+            </button>`,
+            responsive: [
+                {
+                  breakpoint: 800,
+                  settings: {
+                    slidesToShow: 2,
+                  }
+                },
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                  }
+                }
+              ]
+          });
+
+    	$('.singletreatbundleslider').slick({
             cssEase: 'linear',
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -1420,118 +1501,133 @@
 		  });
 		</script>
 		<script>
-document.addEventListener("DOMContentLoaded", function () {
+			document.addEventListener("click", function(e) {
+			  const btn = e.target.closest(".copyclipboard");
+			  if (!btn) return;
 
-    const drawer = document.querySelector(".cart-drawer");
-    const overlay = document.querySelector(".cart-overlay");
-    const cartItemsEl = document.querySelector(".cart-items");
-    const cartCountEl = document.querySelector(".cart-count");
-    const cartTotalTop = document.querySelector(".cart-total-top");
-    const checkoutTotal = document.querySelector(".checkout-total");
-    const cartContent = document.querySelector(".cart-content");
-    const cartSummary = document.querySelector(".cart-summary");
+			  const parent = btn.closest(".cart-discount");
+			  const code = parent.querySelector("span").innerText.trim();
 
-    let cart = [];
+			  navigator.clipboard.writeText(code).then(() => {
+			    btn.classList.add("copied");
+			    setTimeout(() => btn.classList.remove("copied"), 1500);
+			  });
+			});
+			</script>
 
-    // Add to cart
-    document.querySelectorAll(".add-to-cart").forEach(btn => {
-        btn.addEventListener("click", function () {
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
 
-            const name = this.dataset.name;
-            const price = parseInt(this.dataset.price);
+			    const drawer = document.querySelector(".cart-drawer");
+			    const overlay = document.querySelector(".cart-overlay");
+			    const cartItemsEl = document.querySelector(".cart-items");
+			    const cartCountEl = document.querySelector(".cart-count");
+			    const cartTotalTop = document.querySelector(".cart-total-top");
+			    const checkoutTotal = document.querySelector(".checkout-total");
+			    const cartContent = document.querySelector(".cart-content");
+			    const cartSummary = document.querySelector(".cart-summary");
 
-            cart.push({
-                id: Date.now(),
-                name,
-                price,
-                qty: 1
-            });
+			    let cart = [];
 
-            updateCart();
+			    // Add to cart
+			    document.querySelectorAll(".add-to-cart").forEach(btn => {
+			        btn.addEventListener("click", function () {
 
-            if (drawer) drawer.classList.add("active");
-            if (overlay) overlay.classList.add("active");
-            if (cartContent) cartContent.classList.add("open");
-            if (cartSummary) cartSummary.classList.add("open");
-        });
-    });
+			            const name = this.dataset.name;
+			            const price = parseInt(this.dataset.price);
 
-    // Toggle accordion (safe check)
-    if (cartSummary) {
-        cartSummary.addEventListener("click", function () {
-            cartContent.classList.toggle("open");
-            cartSummary.classList.toggle("open");
-        });
-    }
+			            cart.push({
+			                id: Date.now(),
+			                name,
+			                price,
+			                qty: 1
+			            });
 
-    if (overlay) {
-        overlay.addEventListener("click", function () {
-            drawer.classList.remove("active");
-            overlay.classList.remove("active");
-        });
-    }
+			            updateCart();
 
-    function updateCart() {
-        cartItemsEl.innerHTML = "";
-        let total = 0;
+			            if (drawer) drawer.classList.add("active");
+			            if (overlay) overlay.classList.add("active");
+			            if (cartContent) cartContent.classList.add("open");
+			            if (cartSummary) cartSummary.classList.add("open");
+			        });
+			    });
 
-        cart.forEach((item, index) => {
-            total += item.price * item.qty;
+			    // Toggle accordion (safe check)
+			    if (cartSummary) {
+			        cartSummary.addEventListener("click", function () {
+			            cartContent.classList.toggle("open");
+			            cartSummary.classList.toggle("open");
+			        });
+			    }
 
-            cartItemsEl.innerHTML += `
-                <div class="cart-item">
-                    <div>
-                        <h5>${item.name}</h5>
-                    </div>
+			    if (overlay) {
+			        overlay.addEventListener("click", function () {
+			            drawer.classList.remove("active");
+			            overlay.classList.remove("active");
+			        });
+			    }
 
-                    <div class="cart-qty">
-                        <button type="button" onclick="changeQty(${index}, -1)">-</button>
-                        <span>${item.qty}</span>
-                        <button type="button" onclick="changeQty(${index}, 1)">+</button>
-                    </div>
+			    function updateCart() {
+			        cartItemsEl.innerHTML = "";
+			        let total = 0;
 
-                    <div class="cart-price">
-                        ₹${item.price * item.qty}
-                        <span class="remove-item" onclick="removeItem(${index})">✕</span>
-                    </div>
-                </div>
-            `;
-        });
+			        cart.forEach((item, index) => {
+			            total += item.price * item.qty;
 
-        cartCountEl.innerText = cart.length + " items";
-        cartTotalTop.innerText = total;
-        checkoutTotal.innerText = total;
-    }
+			            cartItemsEl.innerHTML += `
+			                <div class="cart-item">
+			                    <div>
+			                        <h5>${item.name}</h5>
+			                    </div>
 
-    // ✅ Qty change
-    window.changeQty = function(index, change) {
+			                    <div class="cart-qty">
+			                        <button type="button" onclick="changeQty(${index}, -1)">-</button>
+			                        <span>${item.qty}</span>
+			                        <button type="button" onclick="changeQty(${index}, 1)">+</button>
+			                    </div>
 
-        index = parseInt(index); // important
+			                    <div class="cart-price">
+			                        ₹${item.price * item.qty}
+			                        <span class="remove-item" onclick="removeItem(${index})">✕</span>
+			                    </div>
+			                </div>
+			            `;
+			        });
 
-        if (!cart[index]) return;
+			        cartCountEl.innerText = cart.length + " items";
+			        cartTotalTop.innerText = total;
+			        checkoutTotal.innerText = total;
+			    }
 
-        cart[index].qty += change;
+			    // ✅ Qty change
+			    window.changeQty = function(index, change) {
 
-        if (cart[index].qty <= 0) {
-            cart.splice(index, 1);
-        }
+			        index = parseInt(index); // important
 
-        updateCart();
-    }
+			        if (!cart[index]) return;
 
-    // ✅ Remove item (FIXED)
-    window.removeItem = function(index) {
+			        cart[index].qty += change;
 
-        index = parseInt(index); // important
+			        if (cart[index].qty <= 0) {
+			            cart.splice(index, 1);
+			        }
 
-        if (!cart[index]) return;
+			        updateCart();
+			    }
 
-        cart.splice(index, 1);
+			    // ✅ Remove item (FIXED)
+			    window.removeItem = function(index) {
 
-        updateCart();
-    }
+			        index = parseInt(index); // important
 
-});
+			        if (!cart[index]) return;
+
+			        cart.splice(index, 1);
+
+			        updateCart();
+			    }
+
+			});
 </script>
 
 
